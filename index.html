@@ -170,8 +170,8 @@ const ctx = document.getElementById('c').getContext('2d');
 
 function buildGradient() {
   const g = ctx.createLinearGradient(0, 0, 0, 320);
-  g.addColorStop(0, 'rgba(244,185,66,0.18)');
-  g.addColorStop(1, 'rgba(244,185,66,0)');
+  g.addColorStop(0, 'rgba(128,128,128,0.18');
+  g.addColorStop(1, 'rgba(128,128,128,0)');
   return g;
 }
 
@@ -181,7 +181,7 @@ const chart = new Chart(ctx, {
     labels: points.map(p => p.label),
     datasets: [{
       data: points.map(p => p.sanity),
-      borderColor: '#8c8f8e',
+      borderColor: '#A9A9A9',
       borderWidth: 2.5,
       tension: 0.42,
       fill: true,
