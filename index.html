@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeR: 🦁's Fundraising Journey</title>
+<title>CodeR: "🦁"'s Fundraising Journey</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=DM+Sans:wght@400;500&display=swap');
@@ -149,7 +149,7 @@
     <div class="legend-item"><div class="legend-dot" style="background:#F4B942"></div>Drama</div>
   </div>
 
-  <div class="footer-note">Closes tonight You did it, J 🥂</div>
+  <div class="footer-note">Closes today. You did it, J 😘 </div>
 </div>
 
 <script>
@@ -227,9 +227,9 @@ function drawAnnotations() {
   const meta = chart.getDatasetMeta(0);
   const last = meta.data[meta.data.length - 1];
   ctx.save(); ctx.font = '20px serif'; ctx.textAlign = 'center';
-  ctx.fillText('🥂', last.x, last.y - 26);
-  ctx.fillText('🔥', meta.data[4].x, meta.data[4].y - 26);
-  ctx.fillText('😤', meta.data[2].x, meta.data[2].y + 30);
+  ctx.fillText(last.x, last.y - 26);
+  ctx.fillText(meta.data[4].x, meta.data[4].y - 26);
+  ctx.fillText(meta.data[2].x, meta.data[2].y + 30);
   ctx.restore();
 }
 
