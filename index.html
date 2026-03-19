@@ -224,7 +224,7 @@ function drawAnnotations() {
   const meta = chart.getDatasetMeta(0);
   const last = meta.data[meta.data.length - 1];
   ctx.save(); ctx.font = '20px serif'; ctx.textAlign = 'center';
-  ctx.fillText('🥂', last.x, last.y - 26);
+  ctx.fillText('🎊', last.x, last.y - 26);
   ctx.fillText(meta.data[4].x, meta.data[4].y - 26);
   ctx.fillText(meta.data[2].x, meta.data[2].y + 30);
   ctx.restore();
