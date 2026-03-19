@@ -143,30 +143,30 @@
   </div>
 
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#9D8EE0"></div>Milestone</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#9D8EE0"></div>Win</div>
     <div class="legend-item"><div class="legend-dot" style="background:#E86A58"></div>Setback</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#56C28B"></div>Win</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#56C28B"></div>Mauling</div>
     <div class="legend-item"><div class="legend-dot" style="background:#F4B942"></div>Drama</div>
   </div>
 
-  <div class="footer-note">Closes tomorrow. You did it, J 🥂</div>
+  <div class="footer-note">Closes tonight You did it, J 🥂</div>
 </div>
 
 <script>
 const points = [
-  { label: "May '25",  sanity: 42, note: "Finally getting investor traction",               emoji: "📈", type: "milestone" },
-  { label: "Jul '25",  sanity: 62, note: "Talking deal terms with a lead — TS incoming?",   emoji: "🤝", type: "win" },
-  { label: "Sep '25",  sanity: 28, note: "Big throw-down argument with fellow partners",     emoji: "🌩️", type: "drama" },
-  { label: "Oct '25",  sanity: 71, note: "Public launch + buzz from Madrona, Casdin, Tom Oxley...", emoji: "🚀", type: "win" },
-  { label: "Nov '25",  sanity: 85, note: "Sequoia reached out! Peak hype.",                  emoji: "🔥", type: "win" },
-  { label: "Nov '25 ", sanity: 32, note: "Botha steps down... and another big fight internally", emoji: "😤", type: "setback" },
-  { label: "Dec '25",  sanity: 47, note: "Working the phones hard. Threaten if necessary 📞", emoji: "💪", type: "milestone" },
-  { label: "Jan '26",  sanity: 63, note: "Traction again! The grind is paying off.",         emoji: "✨", type: "win" },
+  { label: "May '25",  sanity: 60, note: "Finally getting investor traction",               emoji: "📈", type: "mauling" },
+  { label: "Jul '25",  sanity: 80, note: "Talking deal terms with a lead — TS incoming?",   emoji: "🤝", type: "mauling" },
+  { label: "Sep '25",  sanity: 30, note: "Big throw-down argument with fellow partners",     emoji: "🌩️", type: "drama" },
+  { label: "Oct '25",  sanity: 70, note: "Public launch + buzz from Madrona, Casdin, Tom Oxley...", emoji: "💪", type: "win" },
+  { label: "Nov '25",  sanity: 80, note: "Sequoia reached out!",                  emoji: "🔥", type: "mauling" },
+  { label: "Nov '25 ", sanity: 30, note: "Botha steps down... and another big fight internally", emoji: "🤺", type: "setback" },
+  { label: "Dec '25",  sanity: 47, note: "Working the phones hard. Bite if necessary", emoji: "📞", type: "mauling" },
+  { label: "Jan '26",  sanity: 63, note: "Traction again! The grind is paying off.",         emoji: "✨", type: "mauling" },
   { label: "Feb '26",  sanity: 82, note: "Plane ready for landing... AND $12M DARPA grant!!", emoji: "🎯", type: "win" },
   { label: "Mar '26",  sanity: 99, note: ":: champagne popped :: 🥂",                        emoji: "🥂", type: "win" },
 ];
 
-const colorMap = { milestone: "#9D8EE0", setback: "#E86A58", win: "#56C28B", drama: "#F4B942" };
+const colorMap = { win: "#9D8EE0", setback: "#E86A58", mauling: "#56C28B", drama: "#F4B942" };
 
 const ctx = document.getElementById('c').getContext('2d');
 
