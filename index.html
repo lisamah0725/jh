@@ -141,7 +141,7 @@
   </div>
 
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#023020"></div>Win</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#035236"></div>Win</div>
     <div class="legend-item"><div class="legend-dot" style="background:#F4B942"></div>Mauling</div>
     <div class="legend-item"><div class="legend-dot" style="background:#E86A58"></div>Drama</div>
   </div>
@@ -164,7 +164,7 @@ const points = [
   { label: "Mar '26",  sanity: 99, note: ":: champagne pops ::",                        emoji: "🎉", type: "win" },
 ];
 
-const colorMap = { win: "#023020", mauling: "#F4B942", drama: "#E86A58" };
+const colorMap = { win: "#035236", mauling: "#F4B942", drama: "#E86A58" };
 
 const ctx = document.getElementById('c').getContext('2d');
 
@@ -181,7 +181,7 @@ const chart = new Chart(ctx, {
     labels: points.map(p => p.label),
     datasets: [{
       data: points.map(p => p.sanity),
-      borderColor: '#F4B942',
+      borderColor: '#8c8f8e',
       borderWidth: 2.5,
       tension: 0.42,
       fill: true,
